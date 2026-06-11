@@ -22,7 +22,7 @@ It’s a tiny, hackable, and transparent implementation designed to help you und
 With lazy.nvim:
 ```lua
 {
-    "yourusername/simple-snippets.nvim",
+    "yourusername/micro-snippets.nvim",
     config = function()
         require("simple-snippets").setup({
             snippets_dir = vim.fn.stdpath("config") .. "/snippets",
