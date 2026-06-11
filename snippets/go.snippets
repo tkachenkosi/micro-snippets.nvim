@@ -1,0 +1,35 @@
+---err
+return fmt.Errorf("ошибка %w", err)
+---if
+if err != nil {
+	slog.Error("Ошибка: %v", err)
+}
+---ife
+if err != nil {
+	slog.Error("Ошибка: %v", err)
+	return fmt.Errorf("ошибка %w", err)
+} else {
+}
+---log
+slog.Info("")
+---pl
+fmt.Println()
+---pf
+fmt.Printf()
+---ps
+fmt.Sprintf()
+---sl
+select
+---ga
+goroutine anonymous function
+---sw
+Switch
+---fn
+func () {
+}
+---fm
+func ()() {
+}
+---forr
+for k,v :=  range {
+}
